@@ -1,0 +1,1072 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    margin: 0;
+    min-height: 100%;
+    background: #fffaf9;
+    color: #49343d;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    text-align: center;
+}
+
+/* ========================================
+   PORTADA PERSONAL
+   ======================================== */
+
+#inicio {
+    min-height: 100vh;
+    display: block;
+    overflow: hidden;
+    background: #fffaf9;
+}
+
+.portada-nav {
+    width: 100%;
+    min-height: 76px;
+    padding: 18px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fffaf9;
+    color: #795866;
+}
+
+.nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.nav-fecha {
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+/* PORTADA PRINCIPAL */
+
+.hero {
+    position: relative;
+    min-height: 610px;
+    padding: 70px 10%;
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    align-items: center;
+    gap: 60px;
+    background: #f8e8ed;
+    text-align: left;
+}
+
+.hero-texto {
+    position: relative;
+    z-index: 1;
+    max-width: 540px;
+}
+
+.sobretitulo {
+    display: block;
+    margin-bottom: 22px;
+    color: #ad758b;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.hero h1 {
+    margin: 0;
+    color: #694655;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(58px, 7vw, 94px);
+    font-weight: 500;
+    line-height: 0.98;
+}
+
+.hero-descripcion {
+    max-width: 410px;
+    margin: 28px 0;
+    color: #795d68;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.boton-descubrir {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    color: #8d5a70;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px solid #c995a9;
+    padding-bottom: 9px;
+}
+
+.boton-descubrir span {
+    font-size: 18px;
+}
+
+.hero-foto {
+    position: relative;
+    width: 100%;
+    max-width: 440px;
+    justify-self: center;
+    padding: 12px;
+    background: #fffaf9;
+    box-shadow: 0 20px 55px rgba(105, 65, 82, 0.13);
+    transform: rotate(2deg);
+}
+
+.hero-foto img {
+    display: block;
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+}
+
+.foto-etiqueta {
+    display: block;
+    padding: 15px 8px 8px;
+    color: #886878;
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    text-align: center;
+}
+
+.hero-decoracion {
+    position: absolute;
+    right: 5%;
+    bottom: 25px;
+    color: rgba(173, 117, 139, 0.22);
+    font-family: 'Playfair Display', serif;
+    font-size: 100px;
+}
+
+/* NUESTRA HISTORIA */
+
+.historia {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 115px 25px 105px;
+}
+
+.historia h2,
+.seccion-titulo h2,
+.dedicatoria h2,
+.comenzar h2 {
+    margin: 0;
+    color: #694655;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(34px, 5vw, 49px);
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.historia p {
+    max-width: 650px;
+    margin: 25px auto 0;
+    color: #826d75;
+    font-size: 15px;
+    line-height: 2;
+}
+
+/* GALERÍA DE FOTOGRAFÍAS */
+
+.recuerdos {
+    padding: 95px 8%;
+    background: #fdf0f2;
+}
+
+.seccion-titulo {
+    margin-bottom: 50px;
+}
+
+.galeria {
+    max-width: 1050px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+    align-items: start;
+}
+
+.recuerdo {
+    margin: 0;
+    padding: 12px 12px 18px;
+    background: #fffaf9;
+    box-shadow: 0 12px 35px rgba(105, 65, 82, 0.09);
+}
+
+.recuerdo:nth-child(2) {
+    margin-top: 45px;
+    transform: rotate(1.5deg);
+}
+
+.recuerdo:nth-child(3) {
+    transform: rotate(-1.5deg);
+}
+
+.recuerdo:nth-child(4) {
+    margin-top: 45px;
+}
+
+.recuerdo img {
+    display: block;
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+}
+
+.recuerdo figcaption {
+    padding: 16px 5px 0;
+    color: #896b78;
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+}
+
+/* DEDICATORIA */
+
+.dedicatoria {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 115px 25px;
+}
+
+.dedicatoria-corazon {
+    margin: 0 0 20px;
+    color: #c17f99;
+    font-family: 'Playfair Display', serif;
+    font-size: 65px;
+}
+
+.dedicatoria p {
+    margin: 25px auto 0;
+    color: #826d75;
+    font-size: 15px;
+    line-height: 2;
+}
+
+.dedicatoria .dedicatoria-final {
+    color: #a66e85;
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    font-style: italic;
+}
+
+/* BOTÓN PARA COMENZAR */
+
+.comenzar {
+    padding: 100px 20px 110px;
+    background: #f8e8ed;
+}
+
+.comenzar p {
+    margin: 24px 0 30px;
+    color: #826d75;
+    font-size: 15px;
+}
+
+button {
+    background: #b97892;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 16px 27px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #9e607b;
+    transform: translateY(-2px);
+}
+
+.comenzar button span {
+    margin-left: 12px;
+    font-size: 19px;
+}
+
+/* PIE DE PÁGINA */
+
+.portada-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 25px 7%;
+    background: #fffaf9;
+    color: #9b7e89;
+    font-size: 11px;
+}
+
+/* ========================================
+   VIDEOJUEGO
+   ======================================== */
+
+#pantallaJuego {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: #a5d6a7;
+}
+
+#barraJuego {
+    height: 56px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    background: #171923;
+    color: white;
+}
+
+#botonPausa {
+    font-size: 23px;
+    padding: 5px 10px;
+}
+
+#juego {
+    display: block;
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+    background: #a5d6a7;
+    image-rendering: pixelated;
+    touch-action: none;
+}
+
+#menuPausa {
+    position: absolute;
+    inset: 56px 0 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#panelAjustes {
+    width: min(360px, 100%);
+    padding: 24px;
+    border: 3px solid #ffd166;
+    border-radius: 16px;
+    background: #232635;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#panelAjustes h2 {
+    margin: 0;
+}
+
+#volumen {
+    width: 100%;
+    accent-color: #ffd166;
+}
+
+#panelAjustes p {
+    margin: -10px 0 0;
+}
+
+/* ADAPTACIÓN A MÓVILES */
+
+@media (max-width: 700px) {
+    .portada-nav {
+        min-height: 65px;
+        padding: 15px 6%;
+    }
+
+    .nav-logo {
+        font-size: 18px;
+    }
+
+    .nav-fecha {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 65px 8% 75px;
+        grid-template-columns: 1fr;
+        gap: 45px;
+        text-align: center;
+    }
+
+    .hero-texto {
+        margin: auto;
+    }
+
+    .hero h1 {
+        font-size: clamp(55px, 13vw, 76px);
+    }
+
+    .hero-descripcion {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 14px;
+    }
+
+    .hero-foto {
+        width: min(100%, 380px);
+    }
+
+    .hero-foto img {
+        height: 350px;
+    }
+
+    .hero-decoracion {
+        right: 4%;
+        bottom: 5px;
+        font-size: 65px;
+    }
+
+    .historia {
+        padding: 80px 25px;
+    }
+
+    .recuerdos {
+        padding: 75px 6%;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .recuerdo:nth-child(n) {
+        margin-top: 0;
+        transform: none;
+    }
+
+    .recuerdo img {
+        height: 320px;
+    }
+
+    .dedicatoria {
+        padding: 80px 25px;
+    }
+
+    .comenzar {
+        padding: 80px 20px;
+    }
+
+    .portada-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 380px) {
+    .nav-logo {
+        font-size: 15px;
+    }
+
+    .nav-fecha {
+        font-size: 8px;
+    }
+
+    .hero-foto img {
+        height: 280px;
+    }
+
+    .recuerdo img {
+        height: 260px;
+    }
+}
+/* ========================================
+   DIÁLOGOS PIXEL ART
+   ======================================== */
+
+.dialogo-overlay {
+    position: absolute;
+    inset: 56px 0 0;
+    z-index: 20;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    padding: 20px;
+    padding-bottom: 28px;
+
+    background: rgba(0, 0, 0, 0.25);
+}
+
+
+
+.dialogo-caja {
+    width: min(620px, 100%);
+    padding: 18px 20px;
+
+    color: #252536;
+    background: #ebe5cc;
+
+    border: 4px solid #252536;
+    outline: 3px solid #fffdf0;
+    box-shadow: 0 0 0 7px #252536;
+
+    
+    font-family: 'Press Start 2P', monospace;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 2;
+
+}
+
+
+.dialogo-pregunta {
+    margin: 0 0 14px;
+    text-align: left;
+    white-space: pre-wrap;
+}
+
+.dialogo-opciones {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.dialogo-opcion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    width: 100%;
+    padding: 5px 8px;
+
+    color: #252536;
+    background: transparent;
+
+    border: 0;
+    border-radius: 0;
+
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.dialogo-opcion:hover {
+    background: #f0e8c9;
+}
+
+.dialogo-flecha {
+    display: inline-block;
+    width: 18px;
+    flex-shrink: 0;
+}
+
+.dialogo-opcion:not(.seleccionada) .dialogo-flecha {
+    visibility: hidden;
+}
+
+.dialogo-opcion.seleccionada .dialogo-flecha {
+    visibility: visible;
+}
+
+.dialogo-opcion:focus-visible {
+    outline: 2px dashed #252536;
+    outline-offset: 2px;
+}
+
+/* Adaptación a pantallas pequeñas */
+
+@media (max-width: 480px) {
+    .dialogo-overlay {
+        padding: 16px;
+        padding-bottom: 24px;
+    }
+
+    .dialogo-caja {
+        padding: 14px;
+        font-size: 16px;
+    }
+}
+
+/* MINIJUEGO DEL CALENDARIO DE ADVIENTO */
+
+
+/* ========================================
+   MINIJUEGO DEL CALENDARIO DE ADVIENTO
+   ======================================== */
+
+.adviento-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background: rgba(23, 25, 35, 0.97);
+    color: white;
+    font-family: 'Press Start 2P', monospace;
+    text-align: center;
+}
+
+.adviento-panel {
+    width: min(950px, 100%);
+    max-height: 96vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding: 16px;
+    background: #232635;
+    border: 3px solid #ffd166;
+    border-radius: 10px;
+}
+
+.adviento-panel h2 {
+    margin: 0;
+    font-size: clamp(15px, 3vw, 24px);
+    line-height: 1.8;
+}
+
+.adviento-panel p {
+    margin: 0;
+    font-size: clamp(9px, 1.5vw, 13px);
+    line-height: 1.8;
+}
+
+.adviento-portada {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    max-height: 50vh;
+    object-fit: contain;
+    image-rendering: pixelated;
+}
+
+.adviento-botones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.adviento-overlay button {
+    font-family: 'Press Start 2P', monospace;
+    font-size: clamp(9px, 1.5vw, 12px);
+    line-height: 1.8;
+    padding: 12px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: #405b91;
+    color: white;
+    cursor: pointer;
+}
+
+.adviento-overlay button:hover {
+    background: #5878b8;
+}
+
+.adviento-panel-juego {
+    width: min(950px, 100%);
+}
+
+.adviento-marcador {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 12px;
+    width: 100%;
+    font-size: clamp(10px, 1.7vw, 15px);
+}
+
+.adviento-tablero {
+    position: relative;
+    width: min(800px, 100%);
+    max-height: 62vh;
+    margin: 0 auto;
+    line-height: 0;
+}
+
+#imagenTableroAdviento {
+    display: block;
+    width: 100%;
+    height: auto;
+    image-rendering: pixelated;
+}
+
+.adviento-puertas {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+
+.adviento-puerta {
+    position: absolute;
+    width: 7%;
+    height: 12%;
+    min-width: 0;
+    min-height: 0;
+    padding: 0;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    opacity: 0.65;
+    
+}
+
+
+.adviento-puerta.abierta {
+    background: rgba(255, 220, 80, 0.45);
+    border: 1px solid rgba(255, 220, 80, 0.8);
+    opacity: 0.8;
+    color: #171923 !important;
+    box-shadow: 0 0 12px #ffd166;
+    animation: puertaAdviento 0.3s ease-in-out infinite alternate;
+}
+
+.adviento-puntuacion-final {
+    font-size: clamp(20px, 4vw, 32px) !important;
+    color: #ffd166;
+}
+
+@keyframes puertaAdviento {
+    from {
+        transform: translate(-50%, -50%) scale(0.94);
+    }
+
+    to {
+        transform: translate(-50%, -50%) scale(1.08);
+    }
+}
+
+@media (max-width: 480px) {
+    .adviento-overlay {
+        padding: 8px;
+    }
+
+    .adviento-panel {
+        gap: 10px;
+        padding: 12px;
+    }
+
+    .adviento-panel h2 {
+        font-size: 15px;
+    }
+
+    .adviento-overlay button {
+        font-size: 9px;
+        padding: 10px;
+    }
+}
+/* ========================================
+   DECORACIÓN EXTRA DE LA PORTADA
+   ======================================== */
+
+/* Fondo general más elaborado */
+
+#inicio {
+    background:
+        radial-gradient(ellipse at 5% 15%, #fce5ec 0%, transparent 28%),
+        radial-gradient(ellipse at 95% 45%, #f8e3eb 0%, transparent 25%),
+        #fffaf9;
+}
+
+/* Navegación */
+
+.portada-nav {
+    border-bottom: 1px solid #f0dce3;
+}
+
+.nav-logo::before {
+    content: "♡ ";
+    color: #c17f99;
+}
+
+.nav-fecha::after {
+    content: " ♡";
+    color: #c17f99;
+}
+
+/* Portada principal */
+
+.hero {
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 10% 15%, #fff8fa 0 3px, transparent 4px),
+        radial-gradient(circle at 85% 80%, #fff8fa 0 4px, transparent 5px),
+        linear-gradient(135deg, #f9e9ee, #f5dce5);
+}
+
+.hero::before {
+    content: "✧";
+    position: absolute;
+    top: 35px;
+    left: 48%;
+    color: #c68ba1;
+    font-size: 48px;
+    opacity: 0.7;
+}
+
+.hero::after {
+    content: "♡";
+    position: absolute;
+    top: 65px;
+    right: 8%;
+    color: #d5a0b2;
+    font-size: 55px;
+    opacity: 0.6;
+}
+
+.hero-foto {
+    border: 1px solid #ead0da;
+    border-radius: 2px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero-foto:hover {
+    transform: rotate(0deg) translateY(-7px);
+    box-shadow: 0 25px 60px rgba(105, 65, 82, 0.2);
+}
+
+.hero-foto img {
+    border-radius: 1px;
+}
+
+/* Enlace para descubrir */
+
+.boton-descubrir {
+    transition: gap 0.3s ease;
+}
+
+.boton-descubrir:hover {
+    gap: 26px;
+}
+
+/* Historia */
+
+.historia {
+    position: relative;
+}
+
+.historia::before,
+.historia::after {
+    position: absolute;
+    color: #d9a9ba;
+    font-family: Georgia, serif;
+    font-size: 45px;
+    opacity: 0.65;
+}
+
+.historia::before {
+    content: "✿";
+    top: 45px;
+    left: 8%;
+}
+
+.historia::after {
+    content: "✧";
+    right: 8%;
+    bottom: 35px;
+}
+
+/* Galería */
+
+.recuerdos {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 10% 10%, #fffaf9 0 2px, transparent 3px),
+        radial-gradient(circle at 90% 80%, #fffaf9 0 3px, transparent 4px),
+        #fdf0f2;
+}
+
+.seccion-titulo::after {
+    content: "♡  ✧  ♡";
+    display: block;
+    margin-top: 22px;
+    color: #c58ba1;
+    font-size: 23px;
+    letter-spacing: 12px;
+}
+
+.recuerdo {
+    border: 1px solid #f0dce3;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.recuerdo:hover {
+    transform: translateY(-8px) rotate(0deg);
+    box-shadow: 0 20px 40px rgba(105, 65, 82, 0.15);
+}
+
+.recuerdo img {
+    transition: filter 0.35s ease;
+}
+
+.recuerdo:hover img {
+    filter: brightness(1.04);
+}
+
+/* Dedicatoria */
+
+.dedicatoria {
+    position: relative;
+}
+
+.dedicatoria::before {
+    content: "✧";
+    position: absolute;
+    top: 55px;
+    left: 8%;
+    color: #d9a9ba;
+    font-size: 45px;
+}
+
+.dedicatoria::after {
+    content: "✿";
+    position: absolute;
+    right: 8%;
+    bottom: 55px;
+    color: #d9a9ba;
+    font-size: 45px;
+}
+
+.dedicatoria-corazon {
+    animation: latidoSuave 2.5s ease-in-out infinite;
+}
+
+@keyframes latidoSuave {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.12);
+    }
+}
+
+/* Sección final */
+
+.comenzar {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 15% 20%, #fffaf9 0 3px, transparent 4px),
+        radial-gradient(circle at 85% 75%, #fffaf9 0 4px, transparent 5px),
+        linear-gradient(135deg, #f9e9ee, #f3d9e3);
+}
+
+.comenzar::before {
+    content: "♡";
+    position: absolute;
+    left: 8%;
+    top: 25px;
+    color: #d5a0b2;
+    font-size: 75px;
+    opacity: 0.45;
+}
+
+.comenzar::after {
+    content: "✧";
+    position: absolute;
+    right: 9%;
+    bottom: 15px;
+    color: #c68ba1;
+    font-size: 75px;
+    opacity: 0.5;
+}
+
+.comenzar button {
+    position: relative;
+    z-index: 1;
+    min-width: 220px;
+    border-radius: 40px;
+    box-shadow: 0 8px 20px rgba(158, 96, 123, 0.2);
+}
+
+.comenzar button:hover {
+    box-shadow: 0 12px 28px rgba(158, 96, 123, 0.3);
+}
+
+/* Pie de página */
+
+.portada-footer {
+    border-top: 1px solid #f0dce3;
+}
+
+/* Animaciones suaves y accesibilidad */
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-foto,
+    .recuerdo,
+    .dedicatoria-corazon,
+    button {
+        animation: none !important;
+        transition: none !important;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* Ajustes para móviles */
+
+@media (max-width: 700px) {
+    .hero::before {
+        top: 15px;
+        left: 8%;
+        font-size: 35px;
+    }
+
+    .hero::after {
+        top: 20px;
+        right: 7%;
+        font-size: 40px;
+    }
+
+    .historia::before,
+    .historia::after,
+    .dedicatoria::before,
+    .dedicatoria::after {
+        font-size: 30px;
+    }
+
+    .comenzar::before {
+        font-size: 45px;
+    }
+
+    .comenzar::after {
+        font-size: 45px;
+    }
+}

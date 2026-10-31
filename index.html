@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f9e8ed">
+    <title>La línea de nosotros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- PORTADA PERSONAL -->
+    <div id="inicio">
+
+        <nav class="portada-nav">
+            <span class="nav-logo">La línea de nosotros</span>
+            <span class="nav-fecha">27 · 10 · 2026</span>
+        </nav>
+
+        <header class="hero">
+            <div class="hero-texto">
+                <span class="sobretitulo">UNA HISTORIA ENTRE DOS</span>
+
+                <h1>La línea<br>de nosotros</h1>
+
+                <p class="hero-descripcion">
+                    Hay viajes que no se hacen para llegar a un destino,
+                    sino para disfrutar de quién nos acompaña.
+                </p>
+
+                <a href="#nuestra-historia" class="boton-descubrir">
+                    Descubrir nuestra historia
+                    <span>↓</span>
+                </a>
+            </div>
+
+            <div class="hero-foto">
+                <img src="imagenes/portada/portada.jpeg"
+                     alt="Una fotografía de nosotros">
+                <span class="foto-etiqueta">Un viaje por nuestros recuerdos</span>
+            </div>
+
+            <div class="hero-decoracion">♡</div>
+        </header>
+
+        <section id="nuestra-historia" class="historia">
+            <span class="sobretitulo">NUESTRO PEQUEÑO UNIVERSO</span>
+
+            <h2>Todo empezó con un nosotros.</h2>
+
+            <p>
+                Sin darnos cuenta, fuimos llenando el calendario de momentos,
+                los días de recuerdos y nuestra historia de pequeñas cosas
+                que hoy significan muchísimo.
+            </p>
+
+            <p>
+                Esta página es una pequeña forma de guardar una parte
+                de todo lo que hemos vivido.
+            </p>
+        </section>
+
+        <section class="recuerdos">
+            <div class="seccion-titulo">
+                <span class="sobretitulo">ALGUNOS DE NUESTROS MOMENTOS</span>
+                <h2>Pequeños recuerdos,<br>grandes historias.</h2>
+            </div>
+
+            <div class="galeria">
+                <figure class="recuerdo recuerdo-grande">
+                    <img src="imagenes/portada/recuerdo-1.jpeg"
+                         alt="Uno de nuestros recuerdos">
+                    <figcaption>Un momento para recordar ♡</figcaption>
+                </figure>
+
+                <figure class="recuerdo">
+                    <img src="imagenes/portada/recuerdo-2.jpeg"
+                         alt="Otro de nuestros recuerdos">
+                    <figcaption>De esos días especiales</figcaption>
+                </figure>
+
+                <figure class="recuerdo">
+                    <img src="imagenes/portada/recuerdo-3.jpeg"
+                         alt="Otro momento juntos">
+                    <figcaption>Contigo, siempre hay algo que celebrar</figcaption>
+                </figure>
+
+                <figure class="recuerdo recuerdo-ancho">
+                    <img src="imagenes/portada/recuerdo-4.jpeg"
+                         alt="Un recuerdo más de nosotros">
+                    <figcaption>Y todos los que todavía nos quedan</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="dedicatoria">
+            <span class="sobretitulo">PARA TI</span>
+            <div class="dedicatoria-corazon">♡</div>
+
+            <h2>Esto es solo una pequeña parte.</h2>
+
+            <p>
+                Porque nuestra historia no cabe en una página,
+                ni en unas cuantas fotografías.
+                Pero quería regalarte un lugar al que poder volver
+                y recordar algunos de nuestros momentos.
+            </p>
+
+            <p class="dedicatoria-final">
+                Gracias por ser mi acompañante.
+            </p>
+        </section>
+
+        <section class="comenzar">
+            <span class="sobretitulo">¿PREPARADA?</span>
+            <h2>El siguiente recuerdo<br>nos espera.</h2>
+
+            <p>Tu asiento en el tranvía está reservado.</p>
+
+            <!-- IMPORTANTE: conservar este ID -->
+            <button id="botonInicio">Comenzar el viaje <span>→</span></button>
+        </section>
+
+        <footer class="portada-footer">
+            <span>La línea de nosotros</span>
+            <span>Hecho con cariño · 27.10.2026</span>
+        </footer>
+
+    </div>
+
+
+    <!-- VIDEOJUEGO -->
+    <main id="pantallaJuego" hidden>
+
+        <header id="barraJuego">
+            <span>Estación 1: Nuestro comienzo</span>
+            <button id="botonPausa" aria-label="Abrir ajustes">⚙️</button>
+        </header>
+
+        <canvas id="juego" width="800" height="450"></canvas>
+
+        <section id="menuPausa" hidden>
+            <div id="panelAjustes">
+                <h2>Juego en pausa</h2>
+
+                <label for="volumen">Volumen del juego</label>
+                <input id="volumen" type="range"
+                       min="0" max="100" value="70">
+                <p id="valorVolumen">70%</p>
+
+                <button id="botonContinuar">Continuar jugando</button>
+                <button id="botonMenu">Volver al menú principal</button>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+    <script src="cocina.js"></script>
+    <script src="pesca.js"></script>
+
+</body>
+</html>
